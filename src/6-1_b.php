@@ -51,3 +51,12 @@ func_7($g_i);
 echo $g_i, "\n";
 echo "\n";
 
+// PHP7.0.0以降、戻り値にも型宣言が出来ます
+function func_r_2(): string
+{
+    return __FUNCTION__ . ': return';
+}
+$v = func_r_2();
+var_dump($v);
+echo "\n";
+

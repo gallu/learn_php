@@ -91,7 +91,7 @@ for($i = 0; $i < 10; ++$i) {
 }
 echo "\n";
 
-// continueも、breakと同様に「抜け出すloopの数」を指定できます
+// continueも、breakと同様に「戻るloopの数」を指定できます
 for($i = 0; $i < 10; ++$i) {
     if (0 === ($i % 2)) {
         echo '*';

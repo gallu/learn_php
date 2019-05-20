@@ -152,11 +152,11 @@ var_dump( ++$s );
 // and && と or || が二種類あるのは、演算子の優先順位が異なるから、になります。が、それよりは括弧を適切に使うとよいでしょう
 echo "\n";
 echo "true && true : ";
-var_dump(true and true);
-echo "true and true : ";
 var_dump(true && true);
+echo "true and true : ";
+var_dump(true and true);
 echo "true && false : ";
-var_dump(true and false);
+var_dump(true && false);
 echo "true || true : ";
 var_dump(true || true);
 echo "true or true : ";

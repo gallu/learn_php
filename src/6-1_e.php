@@ -21,7 +21,7 @@ func_4(20);
 func_4();
 echo "\n";
 
-// デフォルトの引数について。「デフォルト値を有する引数はデ フォルト値がない引数の右側に全てある必要がある」点に注意しましょう。
+// デフォルトの引数について。「デフォルト値を有する引数はデフォルト値がない引数の右側に全てある必要がある」点に注意しましょう。
 // 関数定義ではなく、使用時にエラーが判明します
 function func_5_e($a = 100, $b) {
     echo __FUNCTION__ , ': ', $a + $b, "\n";
@@ -142,15 +142,6 @@ function func_r_1()
     return __FUNCTION__ . ': return';
 }
 $v = func_r_1();
-var_dump($v);
-echo "\n";
-
-// PHP7.0.0以降、戻り値にも型宣言が出来ます
-function func_r_2(): string
-{
-    return __FUNCTION__ . ': return';
-}
-$v = func_r_2();
 var_dump($v);
 echo "\n";
 

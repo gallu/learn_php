@@ -70,10 +70,10 @@ $i = 1;
 switch($i) {
     case 1:
         echo "実行されます\n";
-        break;
+
     case 5:
         echo "(ここも)実行されます\n";
-        break;
+
     case 10:
         echo "(ここも)実行されます\n";
         break;
