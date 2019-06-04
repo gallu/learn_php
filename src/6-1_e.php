@@ -136,14 +136,15 @@ func_15(new arrayObject()); // arrayObjectは「implements IteratorAggregate(Ite
 echo "\n";
 
 
-// 関数は「戻り値」を持ちます
-function func_r_1()
+// PHP7.0.0以降、戻り値にも型宣言が出来ます
+function func_r_2(): string
 {
     return __FUNCTION__ . ': return';
 }
-$v = func_r_1();
+$v = func_r_2();
 var_dump($v);
 echo "\n";
+
 
 // 「違う型」をreturnした場合、通常はキャスト、強い型付けをしていたらエラー、となります
 function func_r_3(): string
