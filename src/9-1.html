@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+<!-- 起動方法
+php -S 0.0.0.0:8080
+で動かすと、簡易にテストが可能です -->
+
+<form action="./9-1_get.php" method="GET">
+test:<input name="test"><br>
+t2:<input type="checkbox" name="t2[]" value="1">
+<input type="checkbox" name="t2[]" value="2">
+<input type="checkbox" name="t2[]" value="3">
+<input type="checkbox" name="t2[]" value="4">
+<button>send</button>
+</form>
+
+<form action="./9-1_post.php" method="POST">
+test:<input name="test"><br>
+t2:<input type="checkbox" name="t2[]" value="1">
+<input type="checkbox" name="t2[]" value="2">
+<input type="checkbox" name="t2[]" value="3">
+<input type="checkbox" name="t2[]" value="4">
+<button>send</button>
+</form>
+
+</body>
+</html>

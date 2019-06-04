@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+<!-- 起動方法
+php -S 0.0.0.0:8080
+で動かすと、簡易にテストが可能です -->
+
+<h2>ファイル１つ</h2>
+<form action="./9-2.php" method="POST" enctype="multipart/form-data">
+test:<input type="file" name="test"><br>
+<button>send</button>
+</form>
+
+<h2>複数ファイル</h2>
+<form action="./9-2.php" method="POST" enctype="multipart/form-data">
+test:<input type="file" name="t2[]"><br>
+test:<input type="file" name="t2[]"><br>
+test:<input type="file" name="t2[]"><br>
+test:<input type="file" name="t2[]"><br>
+<button>send</button>
+</form>
+
+
+</body>
+</html>
