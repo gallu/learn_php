@@ -22,14 +22,14 @@ try {
     hoge();
 /*
 // ここを有効にすると、 HogeErrorException にはゼッタイに入らない
-} catch (\ErrorException $e) { // XXX PHP7以降の書き方。PHP5系なら \Exception で受ける
+} catch (\ErrorException $e) {
     echo "ErrorException\n";
 */
-} catch (\HogeErrorException $e) { // XXX PHP7以降の書き方。PHP5系なら \Exception で受ける
+} catch (\HogeErrorException $e) {
     echo "HogeErrorException\n";
-} catch (\ErrorException $e) { // XXX PHP7以降の書き方。PHP5系なら \Exception で受ける
+} catch (\ErrorException $e) {
     echo "ErrorException\n";
-} catch (\Exception $e) { // XXX PHP7以降の書き方。PHP5系なら \Exception で受ける
+} catch (\Exception $e) {
     echo "Exception\n";
 } catch (\Throwable $e) { // XXX PHP7以降の書き方。PHP5系なら \Exception で受ける
     echo "Throwable\n";

@@ -80,7 +80,8 @@ class 継承クラスA extends クラスA
 {
     public function 公開メソッド2()
     {
-        $this->非公開メソッド(); // Fatal error: Uncaught Error: Call to private method クラスA::非公開メソッド() ...
+        $this->継承クラス内公開メソッド();
+        //$this->非公開メソッド(); // Fatal error: Uncaught Error: Call to private method クラスA::非公開メソッド() ...
     }
 }
 
@@ -136,6 +137,7 @@ echo "\n";
 $obj = new インタフェース実装クラスA();
 $obj->実装A();
 
+
 // 抽象クラス
 abstract class 抽象クラスA
 {
@@ -151,7 +153,7 @@ abstract class 抽象クラスA
 private $foo;
 }
 // 抽象クラスを実装する
-class 抽象クラスを実装A
+class 抽象クラスを実装A extends 抽象クラスA
 {
     public function 実装A()
     {
