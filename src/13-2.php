@@ -11,7 +11,7 @@ $obj2 = $obj;
 $obj->i = 10;
 var_dump($obj, $obj2);
 var_dump(spl_object_id($obj), spl_object_id($obj2)); // PHP7.2～
-var_dump(spl_object_hash($obj), spl_object_hash($obj2)); // PHP7.2～
+var_dump(spl_object_hash($obj), spl_object_hash($obj2)); //
 
 // 比較としての配列
 echo "\n";
