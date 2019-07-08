@@ -7,7 +7,7 @@ require_once('./initialize.php');
 if (sampleを使いたいURIなら) {
     $class = 'Sample';
     $method = 'index';
-} else if (sampleを使いたいURIなら) {
+} else if (sample2を使いたいURIなら) {
     $class = 'Sample2';
     $method = 'update';
 }

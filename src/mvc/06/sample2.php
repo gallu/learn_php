@@ -11,7 +11,7 @@ class Sample2
 
         // validateとCRUD
         $model = new Model();
-        $model->update($data);
+        $model->update($data, $where);
 
         //
         $this->template_file_name = 'sample2.tpl';

@@ -1,7 +1,7 @@
 <?php
 
 
-class Model
+class HogeModel extends BaseModel
 {
 
     static public function insert($data)
@@ -10,7 +10,7 @@ class Model
         // insert
     }
 
-    public function update($data)
+    public function update($data, $where)
     {
         // validate
         // update
